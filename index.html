@@ -3,10 +3,14 @@
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
+       <title>Fruit Burst</title>
        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
        <script src="https://kit.fontawesome.com/59fd9dbac1.js" crossorigin="anonymous"></script>
        <script src="https://cdn.tailwindcss.com"></script>
+       <!-- google font lato -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"      rel="stylesheet">
        <script>
               tailwind.config = {
                 theme: {
@@ -26,8 +30,13 @@
          },
   };
             </script>
+            <style>
+              .font-lato {
+                  font-family: 'Lato', sans-serif;
+              }
+          </style>
 </head>
-<body>
+<body class="font-lato">
      <header class="lg:max-w-screen-xl  lg:mx-auto p-1 m-1 lg:p-2">
       <nav>
         <div class="navbar lg:bg-secondary-color text-black lg:text-white rounded-full px-5 ">
@@ -183,35 +192,22 @@
               <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                  Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="">
-             <div class="flex md:justify-end justify-center">
-              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl px-3"> 
-                    <span style="--value:15;"></span>
-                  </span>
-                   days
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:10;"></span>
-                  </span>
-                  hours
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:24;"></span>
-                  </span>
-                  min
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:39;"></span>
-                  </span>
-                  sec
-                </div>
+            <div>
+              <div class="flex justify-end gap-6 lg:gap-8">
+                <h1 class="lg:text-5xl text-4xl font-bold">29</h1>
+                <h1 class="lg:text-5xl text-4xl font-bold">:</h1>
+                <h1 class="lg:text-5xl text-4xl font-bold">15</h1>
+                <h1 class="lg:text-5xl text-4xl font-bold">:</h1>
+                <h1 class="lg:text-5xl text-4xl font-bold">26</h1>
+                <h1 class="lg:text-5xl text-4xl font-bold">:</h1>
+                <h1 class="lg:text-5xl text-4xl font-bold">08</h1>
               </div>
-             </div>
+              <div class="flex justify-end lg:gap-20 gap-12">
+                <h1>Days</h1>
+                <h1>Hours</h1>
+                <h1>Minutes</h1>
+                <h1>Seconds</h1>
+              </div>
             </div>
           </div>
           <!-- card item -->
